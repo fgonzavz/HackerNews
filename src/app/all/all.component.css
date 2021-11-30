@@ -1,0 +1,39 @@
+
+
+
+.contenedor-botones{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.contenedor-cards-option{
+    width:40%;
+    
+    /* border: 1px solid blue; */
+}
+.card{
+    width:100%;
+    border: 1px solid #979797;
+    border-radius:6px;
+}
+
+.contenedor-texto{
+    width:86%;
+   
+}
+
+.contenedor-corazon{
+    width: 14%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+.card-img-corazon{
+    cursor:pointer;
+}
+

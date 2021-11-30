@@ -1,0 +1,39 @@
+<div class="contenedor-botones">
+  <button type="button" class="btn btn-outline-primary">All</button>
+  <app-my-faves></app-my-faves>
+</div>
+<div class="contenedor-cards">
+  <div class="contenedor-cards-option" *ngFor="let item of noticiasService.noticias">
+    <div class="card mb-3 card" style="max-width: 540px">
+      <div class="row g-0 card-content">
+        <div class="col-md-8 contenedor-texto">
+          <div class="card-body">
+            <img
+              src="../assets/img/iconmonstr-time-2_8.svg"
+              class="card-img-top"
+              style="width: 20px; height: 20px"
+              alt="..."
+            />
+            <span> 3 hours ago by {{ item.author }}</span>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+              at amet
+            </p>
+          </div>
+        </div>
+        <div
+          style="background-color: #f5f5f5"
+          class="col-md-1 contenedor-corazon"
+        >
+          <img
+            src="../assets/img/iconmonstr-favorite-2.svg"
+            class="card-img-corazon"
+            style="width: 20px; height: 20px; margin-top: 40px"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
