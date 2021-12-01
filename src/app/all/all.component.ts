@@ -8,9 +8,18 @@ import { NoticiasService } from '../services/noticias.service';
 })
 export class AllComponent implements OnInit {
 
-  constructor(public noticiasService: NoticiasService) { }
+  
+
+  constructor(public noticiasService: NoticiasService) { 
+  }
 
   ngOnInit(): void {
   }
+
+
+
+
+
+  
 
 }

@@ -8,6 +8,9 @@ import { MyFavesComponent } from './my-faves/my-faves.component';
 import { HeaderComponent } from './compartida/header/header.component';
 import { FiltroComponent } from './filtro/filtro.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 
 @NgModule({
@@ -17,12 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
     MyFavesComponent,
     HeaderComponent,
     FiltroComponent
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
