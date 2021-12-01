@@ -3,8 +3,11 @@
   <app-my-faves></app-my-faves>
 </div>
 <div class="contenedor-cards">
-  <div class="contenedor-cards-option" *ngFor="let item of noticiasService.noticias">
-    <div class="card mb-3 card" style="max-width: 540px">
+  <div
+    class="contenedor-cards-option"
+    *ngFor="let item of noticiasService.noticias"
+  >
+    <div class="card mb-3 card" style="max-width: 600px">
       <div class="row g-0 card-content">
         <div class="col-md-8 contenedor-texto">
           <div class="card-body">
@@ -14,12 +17,12 @@
               style="width: 20px; height: 20px"
               alt="..."
             />
-            <span> 3 hours ago by {{ item.author }}</span>
-
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-              at amet
-            </p>
+            <span class="card-autor"
+              ><span class="creado-dia">{{ item.created_at }}</span> by
+              {{ item.author }}</span
+            >
+            <h6 class="h6">{{ item.story_title }}</h6>
+            <span class="url-direccion"> {{ item.story_url }}</span>
           </div>
         </div>
         <div
@@ -29,7 +32,7 @@
           <img
             src="../assets/img/iconmonstr-favorite-2.svg"
             class="card-img-corazon"
-            style="width: 20px; height: 20px; margin-top: 40px"
+            style="width: 20px; height: 20px"
             alt="..."
           />
         </div>

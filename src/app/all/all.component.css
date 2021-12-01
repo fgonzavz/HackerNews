@@ -1,39 +1,53 @@
-
-
-
-.contenedor-botones{
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    
+.contenedor-cards {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid red;
 }
 
-
-.contenedor-cards-option{
-    width:40%;
-    
-    /* border: 1px solid blue; */
-}
-.card{
-    width:100%;
-    border: 1px solid #979797;
-    border-radius:6px;
+.contenedor-botones {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
 }
 
-.contenedor-texto{
-    width:86%;
-   
+.contenedor-cards-option {
+  width: 100%;
+}
+.card {
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 6px;
 }
 
-.contenedor-corazon{
-    width: 14%;
-    display: flex;
-    justify-content: center;
-  
+.contenedor-texto {
+  width: 86%;
 }
 
-
-.card-img-corazon{
-    cursor:pointer;
+.contenedor-corazon {
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.card-img-corazon {
+  cursor: pointer;
+}
+
+.h6 {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.creado-dia,
+.card-autor {
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.url-direccion {
+  font-size: 10px;
+}
