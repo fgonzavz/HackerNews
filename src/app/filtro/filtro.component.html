@@ -1,1 +1,6 @@
-<p>filtro works!</p>
+<select [(ngModel)]="lenguaje" (change)="buscar()" class="form-select" aria-label="Default select example">
+  <option selected>Select your news</option>
+  <option value="angular">Angular</option>
+  <option value="reactjs">ReactJS</option>
+  <option value="vuejs">VueJs</option>
+</select>

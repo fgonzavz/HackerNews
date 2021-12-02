@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Noticia } from '../interface/noticia';
-import { PageEvent } from '@angular/material/paginator';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class NoticiasService {
   noticias: Noticia[] = [];
-  pageActual:number = 0;
-  
- 
-  constructor(private http: HttpClient ) {
+  pageActual: number = 0;
+
+  constructor(private http: HttpClient) {
     this.obtenerNoticias();
   }
 
@@ -20,12 +19,14 @@ export class NoticiasService {
         'https://hn.algolia.com/api/v1/search_by_date?query&hitsPerPage=1000'
       )
       .subscribe((resp: any) => {
-     
-        
         this.noticias = resp.hits;
 
         console.log(this.noticias);
       });
   }
 
+  buscarNoticias(verSeleccion: string): Observable<Noticia[]> {
+    const urlBusqueda = `https://hn.algolia.com/api/v1/search_by_date?query=${verSeleccion}`;
+    return this.http.get<Noticia[]>(urlBusqueda);
+  }
 }

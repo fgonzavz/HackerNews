@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Noticia } from '../interface/noticia';
+import { NoticiasService } from '../services/noticias.service';
 
 @Component({
   selector: 'app-filtro',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiltroComponent implements OnInit {
 
-  constructor() { }
+  lenguaje:string = '';
+  verSeleccion: string= '';
+  noticias:Noticia[] = [];
+
+  constructor(public noticiasService: NoticiasService) { }
 
   ngOnInit(): void {
+  }
+
+  buscar(){
+
+    this.verSeleccion = this.lenguaje;
+
+    console.log(this.verSeleccion);
+
+    this.noticiasService.buscarNoticias(this.verSeleccion).subscribe(resp =>{
+      console.log(resp);
+
+    });
+
   }
 
 }
