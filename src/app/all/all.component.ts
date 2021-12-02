@@ -25,6 +25,12 @@ export class AllComponent implements OnInit {
 
   corazon(item: any) {
     this.localStorage.addFavorite(item);
+    this.favs = this.localStorage.getAllItems();
+  }
+
+  eliminarElemento(item: any) {
+    this.localStorage.removeFavorite(item);
+    this.favs = this.localStorage.getAllItems();
   }
 
   MostrarAll() {

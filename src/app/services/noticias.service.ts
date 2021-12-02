@@ -25,8 +25,8 @@ export class NoticiasService {
       });
   }
 
-  buscarNoticias(verSeleccion: string): Observable<Noticia[]> {
-    const urlBusqueda = `https://hn.algolia.com/api/v1/search_by_date?query=${verSeleccion}`;
-    return this.http.get<Noticia[]>(urlBusqueda);
+  buscarNoticias(verSeleccion: string): Observable<any> {
+    const urlBusqueda = `https://hn.algolia.com/api/v1/search_by_date?query=${verSeleccion}&hitsPerPage=1000`;
+    return this.http.get<any>(urlBusqueda);
   }
 }

@@ -30,6 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .card-img-corazon {
@@ -61,3 +62,12 @@
   margin-left: 20px;
   margin-top: 20px;
 }
+
+/* .corazon-img{
+  background-image: url('../../assets/img/iconmonstr-favorite-2.svg');
+  width: 25px;
+   height: 25px;
+   background-repeat: no-repeat;
+} */
+
+
