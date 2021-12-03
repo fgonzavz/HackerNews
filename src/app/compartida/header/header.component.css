@@ -23,9 +23,6 @@
 
 
 @media (max-width: 1020px) {
-
-   
-
     .header {
         overflow: hidden;
     }
@@ -36,9 +33,3 @@
     }  
 }
 
-
-@media (max-width: 584px) {
-
-
-     
-}

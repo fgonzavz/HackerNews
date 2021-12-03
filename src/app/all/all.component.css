@@ -64,13 +64,6 @@
   margin-top: 20px;
 }
 
-/* .corazon-img{
-  background-image: url('../../assets/img/iconmonstr-favorite-2.svg');
-  width: 25px;
-   height: 25px;
-   background-repeat: no-repeat;
-} */
-
 @media (max-width: 960px) {
   .contenedor-cards {
     grid-template-columns: 1fr;

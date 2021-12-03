@@ -24,7 +24,6 @@ export class LocalStorageService {
 
   removeFavorite(item: any) {
     let items = JSON.parse(localStorage.getItem('favorites') || '[]');
-    console.log(item);
     let elementoEliminado = items.findIndex((element: any) => {
       return element.created_at_i === item.created_at_i;
     });

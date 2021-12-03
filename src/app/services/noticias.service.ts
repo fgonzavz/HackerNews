@@ -20,8 +20,6 @@ export class NoticiasService {
       )
       .subscribe((resp: any) => {
         this.noticias = resp.hits;
-
-        console.log(this.noticias);
       });
   }
 
