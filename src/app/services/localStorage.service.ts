@@ -1,27 +1,16 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { Noticia } from '../interface/noticia';
-import { Observable } from 'rxjs';
+
 
 const MY_FAVES: any = 'My Faves';
 @Injectable({
   providedIn: 'root',
 })
 export class LocalStorageService {
-  private noticiasSubject = new BehaviorSubject<Noticia[] | null>(null);
-  noticias$ = this.noticiasSubject.asObservable();
+ 
 
   constructor() {}
 
-  getFavoritesNoticias(): any {
-    try {
-      const noticias = JSON.parse(localStorage.getItem('MY_FAVES')!);
 
-      return noticias;
-    } catch (error) {
-      console.log('error getting favorites from local storage', error);
-    }
-  }
 
   addFavorite(item: any) {
     const items = this.getAllItems();

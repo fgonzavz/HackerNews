@@ -22,7 +22,7 @@ export class AllComponent implements OnInit {
   ngOnInit(): void {
     this.favs = this.localStorage.getAllItems();
   }
-
+   
   corazon(item: any) {
     this.localStorage.addFavorite(item);
     this.favs = this.localStorage.getAllItems();
@@ -33,19 +33,16 @@ export class AllComponent implements OnInit {
     this.favs = this.localStorage.getAllItems();
   }
 
+  
   MostrarAll() {
     if (!this.mostar) {
       this.mostar = true;
-    } else {
-      this.mostar = false;
-    }
-  }
-
-  MostrarMyFaves() {
-    if (this.mostarFaves) {
       this.mostarFaves = false;
     } else {
+      this.mostar = false;
       this.mostarFaves = true;
     }
   }
+
+
 }
