@@ -64,6 +64,8 @@
   margin-top: 20px;
 }
 
+
+
 @media (max-width: 960px) {
   .contenedor-cards {
     grid-template-columns: 1fr;
