@@ -1,27 +1,43 @@
-# HackerNews
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+# Título del Proyecto
+HackerNews
+Pre-requisitos 📋
+Instalar la última versión de NodeJS
+Instalar la última versión de Angular CLI
 
-## Development server
+# Instalación 🔧
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Instalación de node: https://nodejs.org/es/download/
+Instalación angular CLI:(https://github.com/angular/angular-cli) version 13.0.3.
+Documentación de la API: https://hn.algolia.com/api
 
-## Code scaffolding
+# Comando para ejecutar el proyecto en local:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1- Ejecutar el comando npm install
+2- Ejecutar el comando ng serve --o
 
-## Build
+# Construido con 🛠️
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1-Angular
+2-Html
+3-Css
+4-typeScript
+5-Utilizacion de local storage
+6- Hackers News public API.
 
-## Running unit tests
+# Autor✒️
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Francisco González Valenzuela
 
-## Running end-to-end tests
+# Algunas observaciones adicionales ✒️
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1- Para eliminar una card desde la sección de My Faves se tiene que dar clic en el icono de la card que se encuentra en My faves.
+2- Para agregar una card nueva a la sección de My Faves se necesita dar clic en el icono de corazón componente ALL.
+3- Sitio 100% responsive para los dispositivos móviles.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Próximas iteraciones del proyecto 🛠️
+
+1- Realizar un toggle para el corazón de la cards componente All.
+
+2-Eliminar cards de favoritos mediante el corazón .
